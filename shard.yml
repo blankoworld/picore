@@ -1,0 +1,13 @@
+name: picore
+version: 0.1.0
+
+authors:
+  - Olivier DOSSMANN <git@dossmann.net>
+
+targets:
+  picore:
+    main: src/picore.cr
+
+crystal: '>= 1.10.0'
+
+license: MIT

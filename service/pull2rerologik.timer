@@ -1,0 +1,11 @@
+[Unit]
+Description=Lance régulièrement picore
+
+[Timer]
+OnBootSec=1h
+OnUnitActiveSec=1h
+Persistent=True
+Unit=picore.service
+
+[Install]
+WantedBy=multi-user.target

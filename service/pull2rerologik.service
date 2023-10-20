@@ -1,0 +1,11 @@
+[Unit]
+Description=Transforme la liste des PR d'un projet Github en fichiers de configuration pour genese
+After=network.target
+
+[Service]
+Type=simple
+User=http
+WorkingDirectory=/srv/www/picore
+Environment="DEST=/srv/www/picore/config"
+ExecStart=/srv/www/picore/picore
+ProtectHome=false
